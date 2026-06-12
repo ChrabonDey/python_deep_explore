@@ -39,8 +39,38 @@ count=0
 
 for i in x:
     if i>0:
+        if i==5:
+            continue
         count+=1
     
-print(f"The number of positive integers in the list is: {count}")
+# print(f"The number of positive integers in the list is: {count}")
 
+
+# reverse the string using loop
+
+# te=input("Enter a string: ")
+# reversed_st=""
+# # for i in range(len(te)-1,-1,-1):
+# #      reversed_st=reversed_st + te[i]
+# #      print(i,te[i])
+# # print(f"The reversed string is: {reversed_st}")
+
+#3 find the first non-repeated character in a string
+
+input_str = input("Enter a string: ")
+
+freq = {}
+
+for char in input_str:
+    freq[char] = freq.get(char, 0) + 1
+
+non_repeated = []
+
+for char in input_str:
+    if freq[char] == 1:
+        non_repeated.append(char)
+        if len(non_repeated) == 2:
+            break
+
+print(non_repeated[1] if len(non_repeated) > 1 else None)
 
