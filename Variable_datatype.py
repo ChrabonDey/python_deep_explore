@@ -128,9 +128,9 @@ my_list=["apple","banana","Ginger","Orange","Pinapple"]
 my_list[1:3]="Coconut" #['apple', 'C', 'o', 'c', 'o', 'n', 'u', 't', 'Orange', 'Pinapple']
 my_list[1:3]=["Coconut" ] #['apple', 'Coconut', 'Orange', 'Pinapple']
 
-my_list.insert(1,"Mango") #['apple', 'Mango', 'Coconut', 'Orange', 'Pinapple']
+my_list.insert(1,"Mango") #['apple', 'Mango', 'Coconut', 'Orange', 'Pineapple']
 my_list.pop(2) #['apple', 'Mango', 'Orange', 'Pinapple']
-my_list.reverse() #['Pinapple', 'Orange', 'Mango', 'apple']
+my_list.reverse() #['Pineapple', 'Orange', 'Mango', 'apple']
 my_list.sort() #['Mango', 'Orange', 'Pinapple', 'apple']
 my_list.clear() #[]
 
@@ -171,7 +171,7 @@ nested_dict = {
 empty_dict = {}
 
 print(f"\n--- DICTIONARY EXAMPLES ---")
-print(f"Person: {person}")
+print(f"Person: {person}") #output: 
 print(f"Name: {person['name']}")
 print(f"Age: {person.get('age')}")
 print(f"Keys: {person.keys()}")

@@ -57,7 +57,7 @@ for i in x:
 
 #3 find the first non-repeated character in a string
 
-input_str = input("Enter a string: ")
+input_str="HCraobn"
 
 freq = {}
 
@@ -72,5 +72,49 @@ for char in input_str:
         if len(non_repeated) == 2:
             break
 
-print(non_repeated[1] if len(non_repeated) > 1 else None)
+# print(non_repeated[1] if len(non_repeated) > 1 else None)
+
+#factorial Number
+
+def factorial_number(n):
+    if n==0 or n==1:
+        return 1
+    else:
+        return n*factorial_number(n-1)
+    
+# number=int(input("Enter a number to find its factorial: "))
+
+# print(f"The factorial of {number} is:{factorial_number(number)}")
+
+#factorial using while loop
+# def factorial_number_while(n):
+#     result=1
+#     while n>0:
+#         result*=n
+#         n-=1
+        
+#     return result
+
+# print(f"The factorial of {number} is:{factorial_number_while(number)}")
+
+number=29
+
+is_prime=True
+
+
+if number > 1:
+    for i in range(2, number):
+        if (number % i) ==0:
+            is_prime=False
+            break
+    
+    
+    
+    
+        
+
+
+            
+            
+           
 
