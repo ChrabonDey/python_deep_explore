@@ -1,13 +1,10 @@
 
-def multiplication(n):
-     i=1
-     while i<=10:
-         print(f"{n}*{i}={n*i}")
-         i+=1
-     else:
-         print("This is the multiplication")
+def multiplication_table(n):
+    for i in range(1,11):
+        print(f"{n}*{i}={n*i}")
+    
+    
 
+    
+multiplication_table(5)
 
-n=int(input("Enter the number which you want to see multiplication: "))
-
-multiplication(n)

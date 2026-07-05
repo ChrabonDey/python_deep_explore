@@ -1,14 +1,15 @@
-# age=int(input("Enter your age: "))
+#1.
+age=int(input("Enter your age: "))
 
-# def check_age(age):
-#     if age < 18:
-#         print("You are a minor.")
-#     elif age >= 18 and age < 65:
-#         print("You are an adult.")
-#     else:
-#         print("You are a senior citizen.")
+def check_age(age):
+    if age < 18:
+        print("You are a minor.")
+    elif age >= 18 and age < 65:
+        print("You are an adult.")
+    else:
+        print("You are a senior citizen.")
     
-# check_age(age) # this will call the function and pass the age variable to it.
+check_age(age) 
 
 
 #2.
@@ -26,10 +27,7 @@ def discount_in_ticket_price(age,price,day):
             print("No discount available for senior citizens.")
             
             
-# age=int(input("Enter your age:"))
-# price=float(input("Enter the ticket price:"))
-# day=input("Enter the day of the week:").lower()
-# discount_in_ticket_price(age,price,day)
+
 
 
 #3 loop problem solve it using for loop and while loop
@@ -43,19 +41,19 @@ for i in x:
             continue
         count+=1
     
-# print(f"The number of positive integers in the list is: {count}")
+print(f"The number of positive integers in the list is: {count}")
 
 
-# reverse the string using loop
+# 4
 
-# te=input("Enter a string: ")
-# reversed_st=""
-# # for i in range(len(te)-1,-1,-1):
-# #      reversed_st=reversed_st + te[i]
-# #      print(i,te[i])
-# # print(f"The reversed string is: {reversed_st}")
+te=input("Enter a string: ")
+reversed_st=""
+for i in range(len(te)-1,-1,-1):
+     reversed_st=reversed_st + te[i]
+     print(i,te[i])
+print(f"The reversed string is: {reversed_st}")
 
-#3 find the first non-repeated character in a string
+#5 find the first non-repeated character in a string
 
 input_str="HCraobn"
 
@@ -72,9 +70,9 @@ for char in input_str:
         if len(non_repeated) == 2:
             break
 
-# print(non_repeated[1] if len(non_repeated) > 1 else None)
+print(non_repeated[1] if len(non_repeated) > 1 else None)
 
-#factorial Number
+#6. factorial Number
 
 def factorial_number(n):
     if n==0 or n==1:
@@ -82,32 +80,23 @@ def factorial_number(n):
     else:
         return n*factorial_number(n-1)
     
-# number=int(input("Enter a number to find its factorial: "))
+number=int(input("Enter a number to find its factorial: "))
 
-# print(f"The factorial of {number} is:{factorial_number(number)}")
+print(f"The factorial of {number} is:{factorial_number(number)}")
 
-#factorial using while loop
-# def factorial_number_while(n):
-#     result=1
-#     while n>0:
-#         result*=n
-#         n-=1
+#7. factorial using while loop
+
+def factorial_number_while(n):
+    result=1
+    while n>0:
+        result*=n
+        n-=1
         
-#     return result
+    return result
 
-# print(f"The factorial of {number} is:{factorial_number_while(number)}")
-
-number=29
-
-is_prime=True
+print(f"The factorial of {number} is:{factorial_number_while(number)}")
 
 
-if number > 1:
-    for i in range(2, number):
-        if (number % i) ==0:
-            is_prime=False
-            break
-    
     
     
     
