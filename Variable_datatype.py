@@ -7,17 +7,22 @@ temperature = -10
 large_number = 1000000
 binary_number = 0b1010  # Binary representation
 octal_number = 0o755    # Octal representation
-hex_number = 0xFF       # Hexadecimal representation
+hex_number = 0xFF  # Hexadecimal representation
+a=10
+~a = -(a + 1)
+
+# a << n=a × (2^n)
+# a >> n=a // (2^n)
+
 
 import random;
 random_number=random.randint(1,100)
 
-random.choice([1,2,3,4,5])
-random.shuffle([1,2,3,4,5])
+random.choice([1,2,3,4,5])  #output:3
+random.shuffle([1,2,3,4,5])  #output:[3,1,5,2,4]
 
 from decimal import Decimal
-Decimal('0.1')+Decimal('0.2')+Decimal('0.3')
-
+Decimal('0.1')+Decimal('0.2')+Decimal('0.3') #output: Decimal('0.6') because decimal module is used for floating point arithmetic with more precision
 
 
 print(f"Age: {age}, Type: {type(age)}")
@@ -49,7 +54,7 @@ multiline = """This is a
 multiline
 string"""
 empty_string = ""
-with_escape = "Name: \"John\"\nAge: 25"  # Escape sequences
+with_escape = "Name: \"John\"\nAge: 25"  # Escape sequences  output: Name: "John" 
 
 print(f"\n--- STRING EXAMPLES ---")
 print(f"Name: {name}, Type: {type(name)}")
@@ -176,7 +181,7 @@ print(f"Name: {person['name']}")
 print(f"Age: {person.get('age')}")
 print(f"Keys: {person.keys()}")
 print(f"Values: {person.values()}")
-print(f"Items: {person.items()}")
+print(f"Items: {person.items()}") #out
 
 # Dictionary operations
 person["phone"] = "555-1234"
